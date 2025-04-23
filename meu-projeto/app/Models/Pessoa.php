@@ -9,4 +9,8 @@ class Pessoa extends Model
 {
     protected $table = 'pessoas';
     protected $fillable = ['nome', 'idade', 'cpf'];
+
+    public function aluno(){
+        return $this -> hasMany(Aluno::class);
+    }
 }

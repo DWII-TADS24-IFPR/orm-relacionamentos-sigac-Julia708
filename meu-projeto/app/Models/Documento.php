@@ -9,4 +9,8 @@ class Documento extends Model
 {
     protected $table = 'documentos';
     protected $fillable = ['url', 'descricao', 'horas_in', 'status', 'comentaio', 'horas_out'];
+
+    public function categoria(){
+        return $this -> belongsTo(Categoria::class);
+    }
 }
