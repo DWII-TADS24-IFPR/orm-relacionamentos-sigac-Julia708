@@ -19,6 +19,6 @@ class Categoria extends Model
     }
 
     public function comprovate(){
-        return $this -> hasMany(Comprovate::class);
+        return $this -> hasMany(Comprovante::class);
     }
 }
